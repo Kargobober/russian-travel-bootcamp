@@ -1,0 +1,24 @@
+.intro {
+  /* Описание вычисления см. в lead__image-container.css */
+  padding: 0 0 92px calc(148px - (1280px - min(1280px, 100vw)) * 0.391);
+  max-width: 690px;
+}
+
+@media  screen and (max-width: 1024px) {
+  .intro {
+    /* Описание вычисления см. в lead__image-container.css */
+    padding-left: calc(48px - (1024px - max(768px, 100vw)) * 0.1875);
+  }
+}
+
+@media  screen and (max-width: 896px) {
+  .intro {
+    padding-left: 24px;
+  }
+}
+
+@media  screen and (max-width: 414px) {
+  .intro {
+    padding-left: 16px;
+  }
+}
