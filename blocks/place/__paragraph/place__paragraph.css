@@ -1,3 +1,15 @@
 .place__paragraph {
   margin: 0 0 26px 0;
 }
+
+/* Можно написать данное правиль выше медиа-запросов, т.к. у него выше специфичность */
+.place__paragraph:last-child {
+  margin: 0;
+}
+
+@media screen and (max-width: 800px) {
+  .place__paragraph {
+    margin-bottom: 25px;
+  }
+}
+
