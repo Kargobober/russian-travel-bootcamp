@@ -6,6 +6,23 @@
   display: grid;
   grid-auto-flow: row;
   gap: 16px;
-  grid-template-columns: repeat(4, 284px);
-  grid-template-rows: repeat(3, 213px);
+  grid-template-columns: repeat(auto-fit, minmax(284px, 1fr));
+}
+
+@media screen and (max-width: 1273px) {
+  .photo-grid__list {
+    gap: 14px;
+  }
+}
+
+@media screen and (max-width: 979px) {
+  .photo-grid__list {
+    gap: 16px;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .photo-grid__list {
+    gap: 12px;
+  }
 }

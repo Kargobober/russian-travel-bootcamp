@@ -3,6 +3,27 @@
   display: grid;
   grid-auto-flow: row;
   gap: 48px 40px;
-  grid-template-columns: 460px 484px;
-  grid-template-rows: auto auto;
+  /* Берем среднее значение веса фракций картинки и текста
+  Берем фракции, а не проценты, чтобы переменные отступы (gap-column) между элементами учитывались автоматически */
+  grid-template-columns: 4897fr 4973fr; /* 48,97% и 49,73% */
+}
+
+@media  screen and (max-width: 1024px) {
+  .place {
+    column-gap: 32px;
+  }
+}
+
+@media  screen and (max-width: 800px) {
+  .place {
+    column-gap: 28px;
+  }
+}
+
+@media  screen and (max-width: 650px) {
+  .place {
+    display: flex;
+    flex-direction: column;
+    row-gap: 32px;
+  }
 }
