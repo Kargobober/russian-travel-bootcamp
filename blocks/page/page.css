@@ -6,17 +6,23 @@
   background-color: #2A2C2F;
   font-family: 'Inter', Arial, sans-serif;
   color: #fff;
-  /* border: 1px red dashed; */
+  border: 1px red dashed;
   position: relative;
+  z-index: 0;
+
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
+
+  --ind_l: 48px;
+  --ind_m: 24px;
+  --ind_s: 16px;
 }
 
-.page__dev {
+/* .page__dev {
   position: absolute;
   right: 0;
   top: 0;
@@ -24,4 +30,4 @@
   border: 1px green dashed;
   width: 24px;
   height: 100%;
-}
+} */

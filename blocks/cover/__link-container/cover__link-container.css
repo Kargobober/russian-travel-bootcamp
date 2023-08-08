@@ -1,20 +1,22 @@
-.cover__link-container:link {
+.cover__link-container {
+  /* Задаём relative, т.к. это выводит текст поверх овэрлея (::before). Видимо за счёт нового контекста наложения */
+  position: relative;
   width: 100%;
   height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   row-gap: 32px;
-  /* Ниже задаю правило, иначе из-за микс-стиля для ссылок текст внутри контейнера будет становится полупрозрачным */
+}
+
+/* Добавим указание о непрозрачности для перекрытия микс-стиля link */
+.cover__link-container:hover {
   opacity: 1;
 }
 
 @media  screen and (max-width: 414px) {
-  .cover__link-container:link {
+  .cover__link-container {
     row-gap: 16px;
   }
 }

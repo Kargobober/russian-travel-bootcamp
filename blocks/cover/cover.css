@@ -1,8 +1,16 @@
 .cover {
   margin: 0 auto;
-  max-width: 1184px;
+  /* Задаём макс. ширину с учётом боковых отступов по макету при vw = 1280px */
   width: 100%;
+  max-width: 1184px;
+  /* Соотношнеине сторон ориганала фоновой картинки */
+  aspect-ratio: 16 / 10;
+  /* Делаем relative, т.к. дочерний псевдоэлемент before необходимо выровнять по данному блоку */
   position: relative;
+  background-image: url(../../../images/cover-trains.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 .cover::before {

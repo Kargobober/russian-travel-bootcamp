@@ -1,4 +1,4 @@
-.link:link {
+.link {
   cursor: pointer;
   color: #fff;
   opacity: 1;
@@ -6,19 +6,6 @@
   text-decoration: none;
 }
 
-.link:visited {
-  color: #fff;
-}
-
-.link:focus {
-  color: #fff;
-}
-
 .link:hover {
-  color: #fff;
   opacity: 0.8;
-}
-
-.link:active {
-  color: #fff;
 }

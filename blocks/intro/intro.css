@@ -2,6 +2,7 @@
   /* Описание вычисления см. в lead__image-container.css */
   padding: 0 0 92px calc(148px - (1280px - min(1280px, 100vw)) * 0.391);
   max-width: 690px;
+  margin: 0;
 }
 
 @media  screen and (max-width: 1024px) {
@@ -27,23 +28,13 @@
     /* При vw = 896px бок. внешн. отступы у тега figure в блоке lead по 24px (они вычисляются calc-ом)
     Значит, для одинакового начала строк, надо для intro на той же vw задать padding
     К тому же расчет выше может свести паддинг в ноль */
-    padding-left: 24px;
-    padding-bottom: 88px;
-  }
-}
-
-/* Создал отладочный div шириной 24px, спозиционировал абсолютно и прижал к правой границе page
-Затем понял что на ширине окна в 735px текст подбирается к границе этого div
-Потому на ширине меньше 735px нужен паддинг справа*/
-@media  screen and (max-width: 735px) {
-  .intro {
-    padding-right: 24px;
+    padding: 0 24px 88px;
+    max-width: none;
   }
 }
 
 @media  screen and (max-width: 414px) {
   .intro {
-    padding-left: 16px;
-    padding-bottom: 64px;
+    padding: 0 16px 64px;
   }
 }
