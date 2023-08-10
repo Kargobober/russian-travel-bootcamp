@@ -1,14 +1,23 @@
 .place__website {
-  width: 100%;
+  /* Применение max-width или вовсе удаление правила о ширине убрало скролл,
+  т.к. margin теперь вычитал из ширины блока свою величину
+  Но необходимо раньше объявлять об align-self: stretch;*/
   align-self: end;
   display: flex;
   flex-direction: column;
   row-gap: 12px;
 }
 
-@media  screen and (max-width: 414px) {
+
+/* Брэйк-поинт, как у блока place, во время которого происходит перестройка с grid на flex */
+@media  screen and (max-width: 650px) {
   .place__website {
     align-self: stretch;
+  }
+}
+
+@media  screen and (max-width: 414px) {
+  .place__website {
     margin-left: calc(var(--indent_s) * 1px);
   }
 }
