@@ -1,5 +1,5 @@
 .lead__caption {
-  margin: 8px 0 0 0;
+  margin: 8px 0 0;
   align-self: flex-start;
   font-size: 10px;
   font-style: normal;
@@ -7,29 +7,4 @@
   line-height: 1.4;
   letter-spacing: 1.5px;
   text-transform: uppercase;
-}
-
-@media  screen and (max-width: 896px) {
-  .lead__caption {
-    /*
-    При vw = 896px бок. внешн. отступы у тега figure в блоке lead по 24px (они вычисляются calc-ом)
-    При дальнейшем уменьшении vw необходимо увеличивать паддинг у caption, чтобы начало его "строки" было вровень с текстом ниже (блок intro)
-    При vw= 768px бок. маргины у figure по 0 px
-    896 - 768 = 128px - диапазон изм. ширины экрана
-    24 - 0 = 24px - диапазон изменений маргина и паддинга
-    24 / 128 = 0.1875 - коэф. необходимого изм. отступа при изм. шир. экрана на 1px
-    100vw - 768px - тек. изм. ширины экрана (превышение над 768px)
-    (max(100vw, 768px) - 768px) - не позволим! превышению стать отрицательным
-    (max(100vw, 768px) - 768px) * 0.1875 - величина необходимо изменения паддинга
-    24px - (max(100vw, 768px) - 768px) * 0.1875 - искомый паддинг
-    */
-    padding-left: calc(24px - (max(100vw, 768px) - 768px) * 0.1875);
-  }
-}
-
-/* Граничное условие 414px такое же, как у блока intro */
-@media  screen and (max-width: 414px) {
-  .lead__caption {
-    padding-left: 16px;
-  }
 }

@@ -1,0 +1,9 @@
+.centered-block_calc-indent-type_l-0-0-0 {
+  --current-var-ind: (var(--indent_l) - 0);
+  --current-var-vw: (1280 - 1024);
+  /* Пришлось добавить и min и max, т.к. картинка (данный стиль применяется к cover) уменьшалась при росте vw больше 1280px
+  В других блоках такой проблемы не было */
+  --current-calc-indent: var(--indent_l) * 1px - (1280px - min(max(1024px, 100vw), 1280px)) * var(--coef_var-ind_per_var-vw);
+  margin-left: calc(var(--current-calc-indent));
+  margin-right: calc(var(--current-calc-indent));
+}

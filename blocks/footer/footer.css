@@ -1,21 +1,14 @@
 .footer {
   max-width: 1184px;
-  margin: 0 48px;
+  margin: 0;
   padding: 92px 0 24px 0;
   display: flex;
   justify-content: space-between;
-}
-/* Вычисления по медиазпросам см. в intro.css */
-@media  screen and (max-width: 1024px) {
-  .footer {
-    margin: 0 calc(48px - (1024px - max(768px, 100vw)) * 0.1875);
-  }
 }
 
 @media  screen and (max-width: 896px) {
   .footer {
     padding-top: 88px;
-    margin: 0 24px;
   }
 }
 
@@ -24,12 +17,5 @@
     padding-top: 64px;
     flex-direction: column;
     align-items: start;
-  }
-
-}
-
-@media  screen and (max-width: 414px) {
-  .footer {
-    margin: 0 16px;
   }
 }

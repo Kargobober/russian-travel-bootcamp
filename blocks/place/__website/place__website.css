@@ -8,7 +8,7 @@
 
 @media  screen and (max-width: 414px) {
   .place__website {
-    width: 95%;
-    padding-left: 5%;
+    align-self: stretch;
+    margin-left: calc(var(--indent_s) * 1px);
   }
 }

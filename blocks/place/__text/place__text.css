@@ -14,6 +14,6 @@
 
 @media  screen and (max-width: 414px) {
   .place__text {
-    margin: 0 16px;
+    margin: 0 calc(var(--indent_s) * 1px);
   }
 }

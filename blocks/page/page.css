@@ -6,9 +6,7 @@
   background-color: #2A2C2F;
   font-family: 'Inter', Arial, sans-serif;
   color: #fff;
-  border: 1px red dashed;
-  position: relative;
-  z-index: 0;
+  /* border: 1px red dashed; */
 
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
@@ -16,12 +14,9 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
-
-  --ind_l: 48px;
-  --ind_m: 24px;
-  --ind_s: 16px;
 }
 
+/* Отладочный блок, расположен в index.html, в начале body */
 /* .page__dev {
   position: absolute;
   right: 0;

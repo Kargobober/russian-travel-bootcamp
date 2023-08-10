@@ -1,21 +1,14 @@
 .header {
   max-width: 1184px;
-  margin: 0 48px;
+  margin: 0;
   padding-top: 28px;
   display: flex;
   justify-content: space-between;
   align-items: end;
 }
 
-@media  screen and (max-width: 800px) {
-  .header {
-    margin: 0 24px;
-  }
-}
-
 @media  screen and (max-width: 600px) {
   .header {
-    padding-top: 16px;
-    margin: 0 16px;
+    padding-top: calc(var(--indent_s) * 1px);
   }
 }

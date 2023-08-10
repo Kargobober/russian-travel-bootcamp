@@ -17,6 +17,6 @@
   .place__title {
     font-size: 32px;
     line-height: 1.094;
-    margin: 0 5%;
+    margin: 0 calc(var(--indent_s) * 1px);
   }
 }

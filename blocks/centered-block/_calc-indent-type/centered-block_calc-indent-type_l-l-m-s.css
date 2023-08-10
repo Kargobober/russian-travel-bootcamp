@@ -1,0 +1,21 @@
+.centered-block_calc-indent-type_l-l-m-s {
+  margin-left: calc(var(--indent_l) * 1px);
+  margin-right: calc(var(--indent_l) * 1px);
+}
+
+@media  screen and (max-width: 1024px) {
+  .centered-block_calc-indent-type_l-l-m-s {
+    --current-var-ind: (var(--indent_l) - var(--indent_m));
+    --current-var-vw: (1024 - 768);
+    --current-calc-indent: var(--indent_l) * 1px - (1024px - max(768px, 100vw)) * var(--coef_var-ind_per_var-vw);
+    margin-left: calc(var(--current-calc-indent));
+    margin-right: calc(var(--current-calc-indent));
+  }
+}
+
+@media  screen and (max-width: 414px) {
+  .centered-block_calc-indent-type_l-l-m-s {
+    margin-left: calc(var(--indent_s) * 1px);
+    margin-right: calc(var(--indent_s) * 1px);
+  }
+}
