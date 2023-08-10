@@ -6,7 +6,7 @@
   aspect-ratio: 16 / 10;
   /* Делаем relative, т.к. дочерний псевдоэлемент before необходимо выровнять по данному блоку */
   position: relative;
-  background-image: url(../../../images/cover-trains.jpg);
+  background-image: url(../../images/cover-trains.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
